@@ -1,0 +1,24 @@
+/* Explicit orbit positions keep every skill chip clear of the central core. */
+.skill-node {
+  transform: translate(-50%, -50%) !important;
+  transition: border-color .2s, color .2s, box-shadow .2s, scale .2s;
+}
+
+.skill-node:nth-of-type(1) { left: 50% !important; top: 4% !important; }
+.skill-node:nth-of-type(2) { left: 72% !important; top: 9% !important; }
+.skill-node:nth-of-type(3) { left: 88% !important; top: 26% !important; }
+.skill-node:nth-of-type(4) { left: 92% !important; top: 50% !important; }
+.skill-node:nth-of-type(5) { left: 79% !important; top: 77% !important; }
+.skill-node:nth-of-type(6) { left: 56% !important; top: 93% !important; }
+.skill-node:nth-of-type(7) { left: 27% !important; top: 89% !important; }
+.skill-node:nth-of-type(8) { left: 8% !important; top: 68% !important; }
+.skill-node:nth-of-type(9) { left: 10% !important; top: 42% !important; }
+.skill-node:nth-of-type(10) { left: 21% !important; top: 18% !important; }
+.skill-node:nth-of-type(11) { left: 41% !important; top: 8% !important; }
+.skill-node:nth-of-type(12) { left: 63% !important; top: 21% !important; }
+
+.skill-node:hover { scale: 1.08; }
+
+@media (max-width: 760px) {
+  .skill-node { font-size: 10px; }
+}

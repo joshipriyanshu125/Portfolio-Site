@@ -1,0 +1,3 @@
+import { Menu, X, Terminal } from './Icons'; import { useState } from 'react';
+const links=['Home','About','Skills','Projects','AI','Journey','Resume','Contact'];
+export default function Navbar(){const [open,setOpen]=useState(false); return <header className="nav-wrap"><a className="brand" href="#home"><Terminal size={18}/><span>PJ<span className="dot">.</span>DEV</span></a><nav className={open?'open':''}>{links.map(x=><a onClick={()=>setOpen(false)} href={'#'+x.toLowerCase()} key={x}>{x}</a>)}</nav><button className="menu" onClick={()=>setOpen(!open)} aria-label="Toggle navigation">{open?<X/>:<Menu/>}</button></header>}
