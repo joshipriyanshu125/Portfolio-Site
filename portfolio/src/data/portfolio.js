@@ -16,7 +16,7 @@ export const skills = [
 export const projects = [
   { id: '01', title: 'AI Resume Analyzer', kind: 'AI + Full Stack', description: 'A resume platform that evaluates job fit and turns feedback into concrete, ATS-focused improvements.', stack: ['React', 'Node.js', 'MongoDB', 'OpenRouter'], features: ['ATS scoring', 'Missing skills', 'AI rewriting', 'Version history'], accent: 'cyan' },
   { id: '02', title: 'Council Hub', kind: 'MERN Platform', description: 'A structured digital workflow connecting students and counsellors for appointments, records, and remote sessions.', stack: ['MongoDB', 'Express', 'React', 'Node.js'], features: ['Role-based access', 'Appointments', 'Live sessions', 'Records'], accent: 'violet' },
-  { id: '03', title: 'VibeCart AI', kind: 'AI-Powered Commerce', description: 'An AI-assisted MERN commerce experience made for personalized product discovery and confident checkout.', stack: ['React', 'Redux', 'Cloudinary', 'Generative AI'], features: ['Product discovery', 'JWT auth', 'Cart & orders', 'AI assistant'], accent: 'blue' }
+  { id: '03', title: 'AI-Powered Gen-Z Fashion E-Commerce Platform', kind: 'AI-Powered Commerce', description: 'An AI-assisted MERN commerce experience made for personalized product discovery and confident checkout.', stack: ['React', 'Redux', 'Cloudinary', 'Generative AI'], features: ['Product discovery', 'JWT auth', 'Cart & orders', 'AI assistant'], accent: 'blue' }
 ];
 
 export const milestones = [
