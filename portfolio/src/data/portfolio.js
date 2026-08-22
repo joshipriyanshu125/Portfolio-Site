@@ -1,27 +1,139 @@
 export const profile = {
-  name: 'Priyanshu Joshi', role: 'Full-Stack Developer & AI Explorer',
-  location: 'Bhimtal, Uttarakhand, India', email: 'joshipriyanshu125@gmail.com',
-  github: 'https://github.com/joshipriyanshu125', linkedin: 'https://linkedin.com/in/priyanshujoshi-215b85304',
-  intro: 'I build thoughtful web experiences and intelligent applications with the MERN stack.',
-  focus: 'Deepening Generative AI, prompt engineering & RAG', resume: '/Priyanshu_Joshi_Resume.pdf'
+  name: 'Priyanshu Joshi',
+  role: 'Full-Stack Developer & AI Explorer',
+  location: 'Bhimtal, Uttarakhand, India',
+  phone: '+91 9105131502',
+  email: 'joshipriyanshu125@gmail.com',
+  github: 'https://github.com/joshipriyanshu125',
+  linkedin: 'https://linkedin.com/in/priyanshujoshi-215b85304',
+  summary: 'MERN Stack Developer and final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 3 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, and LLM integration. Focused on Generative AI, prompt engineering, and RAG.',
+  intro: 'Final-year CS student specializing in AI-powered full-stack web applications & MERN development.',
+  focus: 'Generative AI, Prompt Engineering, RAG & LLM Integration',
+  resume: '/Priyanshu_Joshi_Resume.pdf'
 };
 
-export const skills = [
-  ['React.js', 'Interfaces that feel fast and considered'], ['JavaScript', 'The language I build with daily'], ['Node.js', 'Reliable server-side applications'],
-  ['Express', 'Clean REST API design'], ['MongoDB', 'Flexible, scalable data modeling'], ['Tailwind', 'Purposeful visual systems'],
-  ['Redux Toolkit', 'Predictable client state'], ['Python', 'Automation and AI experimentation'], ['JWT', 'Secure authentication flows'],
-  ['LLM APIs', 'Practical AI product integrations'], ['RAG', 'Currently learning retrieval workflows'], ['Git / GitHub', 'Versioned, collaborative delivery']
+export const education = [
+  {
+    institution: 'Birla Institute of Applied Sciences',
+    location: 'Bhimtal, India',
+    degree: 'Bachelor of Technology in Computer Science and Engineering',
+    details: 'CGPA: 7.3/10 (Expected 2027)',
+    coursework: 'Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, OOP, Software Engineering'
+  },
+  {
+    institution: 'St. Lawrence Sr. Sec. School',
+    location: 'Haldwani, Uttarakhand',
+    degree: 'Senior Secondary (Class XII), CBSE',
+    details: '86% — 2023'
+  },
+  {
+    institution: 'St. Lawrence Sr. Sec. School',
+    location: 'Haldwani, Uttarakhand',
+    degree: 'Secondary (Class X), CBSE',
+    details: '88% — 2021'
+  }
 ];
 
+export const experience = [
+  {
+    role: 'Independent Full-Stack Developer',
+    subtitle: 'Project Experience',
+    points: [
+      'Designed and developed 3 production-style full-stack applications using the MERN stack, REST APIs, JWT authentication, MongoDB, and modern React workflows.',
+      'Built 20+ REST API endpoints, role-based access controls, database schemas, responsive interfaces, and integrated LLM-powered features across resume and e-commerce applications.'
+    ]
+  }
+];
+
+export const skills = [
+  ['React.js', 'Interfaces that feel fast and considered'],
+  ['Node.js', 'Reliable server-side applications & REST APIs'],
+  ['Express.js', 'Clean REST API design & JWT authorization'],
+  ['MongoDB', 'Flexible, scalable data modeling & Mongoose'],
+  ['Tailwind CSS', 'Purposeful visual systems & responsive UI'],
+  ['Redux Toolkit', 'Predictable client-side state management'],
+  ['Generative AI', 'LLM APIs, Prompt Engineering & RAG workflows'],
+  ['JavaScript', 'Primary language for full-stack delivery'],
+  ['Python', 'AI experimentation, scripting & automation'],
+  ['JWT', 'Secure authentication & role-based access controls'],
+  ['Cloudinary', 'Dynamic media management & uploads'],
+  ['Git / GitHub', 'Versioned, collaborative software delivery']
+];
+
+export const skillCategories = {
+  Languages: ['JavaScript', 'Python', 'Java', 'SQL'],
+  Frontend: ['React.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'Redux Toolkit', 'React Router', 'Vite'],
+  Backend: ['Node.js', 'Express.js', 'REST APIs', 'JWT', 'Authentication', 'Authorization'],
+  Databases: ['MongoDB', 'Mongoose', 'MySQL'],
+  'AI / Generative AI': ['LLM APIs', 'Prompt Engineering', 'RAG', 'AI Agents', 'LLM Integration', 'OpenAI API', 'Gemini API'],
+  Tools: ['Git', 'GitHub', 'Postman', 'Cloudinary', 'VS Code'],
+  'Core Concepts': ['Data Structures & Algorithms', 'OOP', 'DBMS', 'Operating Systems', 'Computer Networks', 'Software Development'],
+  'Soft Skills': ['Leadership', 'Team Collaboration', 'Problem Solving', 'Communication', 'Adaptability']
+};
+
 export const projects = [
-  { id: '01', title: 'AI Resume Analyzer', kind: 'AI + Full Stack', description: 'A resume platform that evaluates job fit and turns feedback into concrete, ATS-focused improvements.', stack: ['React', 'Node.js', 'MongoDB', 'OpenRouter'], features: ['ATS scoring', 'Missing skills', 'AI rewriting', 'Version history'], accent: 'cyan' },
-  { id: '02', title: 'Council Hub', kind: 'MERN Platform', description: 'A structured digital workflow connecting students and counsellors for appointments, records, and remote sessions.', stack: ['MongoDB', 'Express', 'React', 'Node.js'], features: ['Role-based access', 'Appointments', 'Live sessions', 'Records'], accent: 'violet' },
-  { id: '03', title: 'AI-Powered Gen-Z Fashion E-Commerce Platform', kind: 'AI-Powered Commerce', description: 'An AI-assisted MERN commerce experience made for personalized product discovery and confident checkout.', stack: ['React', 'Redux', 'Cloudinary', 'Generative AI'], features: ['Product discovery', 'JWT auth', 'Cart & orders', 'AI assistant'], accent: 'blue' }
+  {
+    id: '01',
+    title: 'AI Resume Analyzer & Resume Builder',
+    kind: 'AI + Full Stack',
+    stackHeader: 'React.js, Node.js, Express.js, MongoDB, OpenRouter, REST APIs',
+    description: 'An AI-powered resume platform featuring 5 core AI capabilities: ATS scoring, missing-skill detection, keyword optimization, job-role matching, and resume rewriting.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'OpenRouter', 'JWT'],
+    features: [
+      '5 Core AI Features (ATS scoring, skill detection, keyword optimization)',
+      '10+ Secured REST API Endpoints with JWT for parsing & editing',
+      '4 Modeled MongoDB Collections for resumes, versions & results',
+      'OpenRouter LLM Integration for contextual ATS recommendations'
+    ],
+    accent: 'cyan'
+  },
+  {
+    id: '02',
+    title: 'Council Hub',
+    kind: 'MERN Platform',
+    stackHeader: 'MongoDB, Express.js, React.js, Node.js, REST APIs',
+    description: 'A full-stack counselling platform connecting students and counsellors through registration, appointment booking, record management, and remote sessions.',
+    stack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST APIs'],
+    features: [
+      'Role-Based Auth & Authorization for students and counsellors',
+      'Real-Time Chat & 1:1 Audio/Video Sessions for remote counselling',
+      'Integrated Online Meeting & Booking Workflows',
+      '5 Entity Schemas (Users, Appointments, Sessions, Records, Messages)'
+    ],
+    accent: 'violet'
+  },
+  {
+    id: '03',
+    title: 'AI-Powered Gen-Z Fashion E-Commerce Platform',
+    kind: 'AI-Powered Commerce',
+    stackHeader: 'React.js, Node.js, Express.js, MongoDB, Redux Toolkit, Cloudinary',
+    description: 'A MERN fashion storefront spanning 6 core modules with JWT auth, Cloudinary media handling, Redux Toolkit state, and a conversational AI shopping assistant.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Cloudinary'],
+    features: [
+      '6 Core Modules (Discovery, Auth, Cart, Checkout, Tracking, Reviews)',
+      'Conversational AI Shopping Assistant via Integrated LLM APIs',
+      'JWT Authentication & Role-Based Authorization across REST APIs',
+      'React.js + Tailwind CSS UI with Cloudinary & Mongoose Modeling'
+    ],
+    accent: 'blue'
+  }
+];
+
+export const certifications = [
+  { name: 'Back End Development and APIs', issuer: 'freeCodeCamp' },
+  { name: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp' },
+  { name: 'Graphethon Certificate', issuer: 'Graphic Era Deemed to be University', year: '2025' }
+];
+
+export const achievements = [
+  { title: 'Graphethon — National Rank', detail: 'Secured a Top 25 position among participants across India.' },
+  { title: 'Hackathons & Competitions', detail: 'Built full-stack solutions under tight time constraints in multiple technical competitions.' }
 ];
 
 export const milestones = [
-  ['Now', 'Generative AI exploration', 'Growing hands-on skills with RAG, prompt engineering, agents and LLM integrations.'],
-  ['2025', 'Top 25 - Graphethon', 'Placed among participants from across India while building under hackathon constraints.'],
-  ['2024 - 27', 'B.Tech, Computer Science', 'Birla Institute of Applied Sciences - coursework across systems, data and software engineering.'],
-  ['Foundation', 'MERN development', 'Built end-to-end projects across React, Node, Express and MongoDB.']
+  ['2027 (Expected)', 'B.Tech in CSE (CGPA: 7.3/10)', 'Birla Institute of Applied Sciences, Bhimtal. Coursework: DSA, DBMS, OS, Networks, OOP, Software Eng.'],
+  ['2025', 'Top 25 - Graphethon', 'Secured a Top 25 national position among participants across India.'],
+  ['Projects', 'Full-Stack & AI Applications', 'Built 3 production-style projects with 20+ REST APIs, JWT, and LLM integrations.'],
+  ['2023', 'Senior Secondary (Class XII)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE - 86%).'],
+  ['2021', 'Secondary (Class X)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE - 88%).']
 ];
