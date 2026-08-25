@@ -1,10 +1,34 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { ArrowDownRight, ArrowUpRight, Bot, BrainCircuit, Check, Download, ExternalLink, Github, Linkedin, Mail, MapPin, Send, Sparkles } from '../components/Icons';
+import {
+  ArrowDownRight,
+  ArrowUpRight,
+  Bot,
+  BrainCircuit,
+  Check,
+  Download,
+  ExternalLink,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  Send,
+  Sparkles,
+} from '../components/Icons';
 import Navbar from '../components/Navbar';
 import Cursor from '../components/Cursor';
+import CosmicBackdrop from '../components/CosmicBackdrop';
 import OrbitalScene from '../three/OrbitalScene';
-import { profile, projects, skills, milestones, education, experience, certifications, achievements, skillCategories } from '../data/portfolio';
+import {
+  profile,
+  projects,
+  skills,
+  milestones,
+  education,
+  experience,
+  certifications,
+  achievements,
+} from '../data/portfolio';
 import '../skills.css';
 
 const Reveal = ({ children, className = '' }) => (
@@ -36,53 +60,74 @@ export default function App() {
   const progress = useSpring(scrollYProgress, { stiffness: 90, damping: 25 });
 
   useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 1050);
+    const t = setTimeout(() => setLoaded(true), 900);
     return () => clearTimeout(t);
   }, []);
 
   return (
     <>
+      <CosmicBackdrop />
       <motion.div className="progress" style={{ scaleX: progress }} />
       <Cursor />
+
       {!loaded && (
         <div className="loader">
           <div className="loader-core" />
-          <span>INITIALIZING PORTFOLIO</span>
+          <span>INITIALIZING COSMIC SYSTEM</span>
         </div>
       )}
+
       <Navbar />
+
       <main>
+        {/* HERO SECTION */}
         <section id="home" className="hero">
-          <div className="hero-grid" />
           <div className="hero-copy">
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: loaded ? 1 : 0 }} className="availability">
-              <i /> AVAILABLE FOR COLLABORATION
-            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: loaded ? 1 : 0, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="availability-pill"
+            >
+              <Sparkles size={14} className="sparkle-icon" />
+              <span>OPEN TO OPPORTUNITIES</span>
+            </motion.div>
+
             <h1>
-              Building the web’s<br />
-              <em>next dimension.</em>
+              Hi, I’m Priyanshu
+              <br />
+              <span className="hero-gradient-text">Full-Stack Developer &</span>
+              <br />
+              <span className="hero-white-text">AI Enthusiast</span>
             </h1>
-            <p>{profile.intro}</p>
+
+            <p className="hero-subtitle">
+              Building modern web experiences and intelligent applications.
+            </p>
+
             <div className="actions">
-              <a className="button primary" href="#projects">
-                Explore work <ArrowDownRight />
+              <a className="button primary-pill" href="#projects">
+                View Projects
               </a>
-              <a className="button ghost" href={profile.resume} download>
-                Resume <Download />
+              <a className="button outline-pill" href={profile.resume} download>
+                <Download size={15} /> Download Resume
+              </a>
+              <a className="button outline-pill" href="#contact">
+                <Mail size={15} /> Contact Me
               </a>
             </div>
-            <div className="hero-meta">
-              <span>01 / 08</span>
-              <span>SCROLL TO EXPLORE</span>
+
+            <div className="scroll-indicator">
+              <span className="arrow-down">↓</span> SCROLL TO EXPLORE THE SYSTEM
             </div>
           </div>
+
           <div className="scene hero-scene">
             <OrbitalScene />
           </div>
-          <div className="orbital-label top">MERN / FULL STACK</div>
-          <div className="orbital-label bottom">GEN AI / RAG</div>
         </section>
 
+        {/* ABOUT SECTION */}
         <section id="about" className="split about">
           <SectionHead kicker="Identity" title="More than the stack." />
           <Reveal className="about-body">
@@ -121,8 +166,13 @@ export default function App() {
           </Reveal>
         </section>
 
+        {/* SKILLS ORBIT SECTION */}
         <section id="skills" className="skills-section">
-          <SectionHead kicker="Tech orbit" title="Tools in active rotation." copy="Hover or tap a signal to see where it fits into the build." />
+          <SectionHead
+            kicker="Tech orbit"
+            title="Tools in active rotation."
+            copy="Hover or tap a signal to see where it fits into the build."
+          />
           <div className="skill-orbit">
             <div className="orbit-core">
               BUILD<small>•</small>LEARN
@@ -131,7 +181,10 @@ export default function App() {
               <motion.button
                 title={desc}
                 className="skill-node"
-                style={{ '--a': `${i * 30}deg`, '--d': `${150 + (i % 3) * 30}px` }}
+                style={{
+                  '--a': `${i * 30}deg`,
+                  '--d': `${150 + (i % 3) * 30}px`,
+                }}
                 whileHover={{ scale: 1.13, zIndex: 5 }}
                 key={name}
               >
@@ -142,8 +195,12 @@ export default function App() {
           </div>
         </section>
 
+        {/* PROJECTS SECTION */}
         <section id="projects" className="projects">
-          <SectionHead kicker="Selected transmissions" title="Things I’ve brought to life." />
+          <SectionHead
+            kicker="Selected transmissions"
+            title="Things I’ve brought to life."
+          />
           <div className="project-list">
             {projects.map((p) => (
               <Reveal key={p.id} className={'project ' + p.accent}>
@@ -166,7 +223,13 @@ export default function App() {
                     </span>
                   ))}
                 </div>
-                <a href={profile.github} target="_blank" rel="noreferrer" className="round-link" aria-label={'View ' + p.title + ' on GitHub'}>
+                <a
+                  href={profile.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="round-link"
+                  aria-label={'View ' + p.title + ' on GitHub'}
+                >
                   <ArrowUpRight />
                 </a>
               </Reveal>
@@ -174,6 +237,7 @@ export default function App() {
           </div>
         </section>
 
+        {/* AI FRONTIER SECTION */}
         <section id="ai" className="ai-section">
           <div className="ai-copy">
             <SectionHead
@@ -182,7 +246,13 @@ export default function App() {
               copy="I’m deliberately learning how to put language models to work - not just in demos, but in products people can use."
             />
             <div className="ai-pills">
-              {['LLM APIs', 'Prompt Engineering', 'RAG Workflows', 'AI Agents', 'OpenAI & Gemini API'].map((x) => (
+              {[
+                'LLM APIs',
+                'Prompt Engineering',
+                'RAG Workflows',
+                'AI Agents',
+                'OpenAI & Gemini API',
+              ].map((x) => (
                 <button key={x}>
                   <BrainCircuit size={16} />
                   {x}
@@ -196,12 +266,14 @@ export default function App() {
           <div className="ai-notice">
             <Bot />{' '}
             <span>
-              Current focus<br />
+              Current focus
+              <br />
               <b>Context-aware AI products & RAG</b>
             </span>
           </div>
         </section>
 
+        {/* JOURNEY SECTION */}
         <section id="journey" className="journey">
           <SectionHead kicker="Journey log" title="Forward, by building." />
           <div className="timeline">
@@ -218,22 +290,36 @@ export default function App() {
           </div>
         </section>
 
+        {/* RESUME SECTION */}
         <section id="resume" className="resume-section">
           <Reveal className="resume-card">
             <p className="eyebrow">// Curriculum vitae</p>
-            <h2>Want the full<br />signal?</h2>
-            <p>A compact record of my projects, skills, education, certifications and achievements.</p>
+            <h2>
+              Want the full
+              <br />
+              signal?
+            </h2>
+            <p>
+              A compact record of my projects, skills, education, certifications
+              and achievements.
+            </p>
             <div className="actions">
-              <a className="button primary" href={profile.resume} target="_blank" rel="noreferrer">
+              <a
+                className="button primary-pill"
+                href={profile.resume}
+                target="_blank"
+                rel="noreferrer"
+              >
                 View resume <ExternalLink />
               </a>
-              <a className="button ghost" href={profile.resume} download>
+              <a className="button outline-pill" href={profile.resume} download>
                 Download <Download />
               </a>
             </div>
             <div className="resume-sheet">
               <b>
-                PRIYANSHU<br />
+                PRIYANSHU
+                <br />
                 JOSHI
               </b>
               <span>FULL STACK / AI</span>
@@ -241,11 +327,18 @@ export default function App() {
           </Reveal>
         </section>
 
+        {/* CONTACT SECTION */}
         <section id="contact" className="contact">
-          <SectionHead kicker="Open channel" title="Let’s build something that matters." />
+          <SectionHead
+            kicker="Open channel"
+            title="Let’s build something that matters."
+          />
           <div className="contact-grid">
             <Reveal>
-              <p className="lead">Have an opportunity, a project, or just want to exchange ideas? My inbox is open.</p>
+              <p className="lead">
+                Have an opportunity, a project, or just want to exchange ideas? My
+                inbox is open.
+              </p>
               <div className="socials">
                 <a href={'mailto:' + profile.email}>
                   <Mail /> {profile.email}
@@ -275,16 +368,22 @@ export default function App() {
                 </label>
                 <label>
                   Message
-                  <textarea required placeholder="Tell me about it..." rows="3" />
+                  <textarea
+                    required
+                    placeholder="Tell me about it..."
+                    rows="3"
+                  />
                 </label>
-                <button className="button primary" type="submit">
-                  {sent ? 'Message staged - thank you!' : 'Send transmission'} <Send />
+                <button className="button primary-pill" type="submit">
+                  {sent ? 'Message staged - thank you!' : 'Send transmission'}{' '}
+                  <Send />
                 </button>
               </form>
             </Reveal>
           </div>
         </section>
       </main>
+
       <footer>
         <span>© {new Date().getFullYear()} PRIYANSHU JOSHI</span>
         <span>DESIGNED FOR THE NEXT BUILD</span>
