@@ -1,3 +1,4 @@
+
 import { forwardRef } from 'react';
 const glyphs={ArrowDownRight:'↘',ArrowUpRight:'↗',Bot:'◉',BrainCircuit:'◌',Check:'✓',Download:'↓',ExternalLink:'↗',Github:'◈',Linkedin:'in',Mail:'✉',MapPin:'⌖',Send:'→',Sparkles:'✦',Menu:'☰',X:'×',Terminal:'›_'};
 const make=(name)=>forwardRef(function Icon({size=16,className,...props},ref){return <span ref={ref} {...props} className={'icon '+(className||'')} style={{fontSize:size,...props.style}} aria-hidden="true">{glyphs[name]}</span>});
