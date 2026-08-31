@@ -25,6 +25,7 @@ import {
   skillCategories,
   milestones,
 } from '../data/portfolio';
+import ContactForm from '../components/ContactForm';
 import '../skills.css';
 
 const Reveal = ({ children, className = '' }) => (
@@ -428,33 +429,7 @@ export default function App() {
                 </div>
               </Reveal>
               <Reveal className="contact-form-col">
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSent(true);
-                  }}
-                >
-                  <label>
-                    Name
-                    <input required placeholder="Your name" />
-                  </label>
-                  <label>
-                    Email
-                    <input required type="email" placeholder="you@company.com" />
-                  </label>
-                  <label>
-                    Message
-                    <textarea
-                      required
-                      placeholder="Tell me about it..."
-                      rows="3"
-                    />
-                  </label>
-                  <button className="button primary-pill" type="submit">
-                    {sent ? 'Message staged - thank you!' : 'Send transmission'}{' '}
-                    <Send />
-                  </button>
-                </form>
+                <ContactForm />
               </Reveal>
               <div className="contact-planet-col">
                 <OrbitalScene planetKey="neptune" />
