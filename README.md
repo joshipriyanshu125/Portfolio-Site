@@ -1,4 +1,23 @@
-# Portfolio-Site
+# 💻 Developer Portfolio
 
-# Personal Portfolio Website  A modern, responsive developer portfolio showcasing my projects, technical skills, experience, and achievements. Built with a clean UI and focused on presenting my development journey, featured projects, and full-stack development capabilities.
+Welcome to my personal developer portfolio — a modern and responsive website showcasing my **skills, projects, experience, and development journey**.
 
+### 🌐 Live Portfolio
+
+👉 **[View Portfolio](https://portfolio-site-eight-pi-33.vercel.app/)**
+
+### ✨ Highlights
+
+* 🎨 Modern & clean UI/UX
+* 📱 Fully responsive design
+* 💻 Projects & technical skills
+* ⚡ Fast and interactive experience
+* 🚀 Deployed with Vercel
+
+### 🛠️ Tech Stack
+
+**React • JavaScript • CSS • Vercel**
+
+---
+
+⭐ If you like my work, feel free to explore my portfolio and connect with me!
