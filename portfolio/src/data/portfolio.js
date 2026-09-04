@@ -6,7 +6,8 @@ export const profile = {
   email: 'joshipriyanshu125@gmail.com',
   github: 'https://github.com/joshipriyanshu125',
   linkedin: 'https://linkedin.com/in/priyanshujoshi-215b85304',
-  summary: 'MERN Stack Developer and final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 3 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, and LLM integration. Focused on Generative AI, prompt engineering, and RAG.',
+  portfolio: 'https://portfolio-site-eight-pi-33.vercel.app',
+  summary: 'MERN Stack Developer and currently a final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 3 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, and LLM integration. Focused on Generative AI, prompt engineering, and RAG.',
   intro: 'Final-year CS student specializing in AI-powered full-stack web applications & MERN development.',
   focus: 'Generative AI, Prompt Engineering, RAG & LLM Integration',
   resume: '/Priyanshu_Joshi_Resume.pdf'
@@ -18,7 +19,7 @@ export const education = [
     location: 'Bhimtal, India',
     degree: 'Bachelor of Technology in Computer Science and Engineering',
     details: 'CGPA: 7.3/10 (Expected 2027)',
-    coursework: 'Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, OOP, Software Engineering'
+    coursework: 'Data Structures & Algorithms, Database Management Systems, Operating Systems, Computer Networks, Object-Oriented Programming, Software Engineering'
   },
   {
     institution: 'St. Lawrence Sr. Sec. School',
@@ -131,9 +132,10 @@ export const achievements = [
 ];
 
 export const milestones = [
-  ['2027 (Expected)', 'B.Tech in CSE (CGPA: 7.3/10)', 'Birla Institute of Applied Sciences, Bhimtal. Coursework: DSA, DBMS, OS, Networks, OOP, Software Eng.'],
-  ['2025', 'Top 25 - Graphethon', 'Secured a Top 25 national position among participants across India.'],
-  ['Projects', 'Full-Stack & AI Applications', 'Built 3 production-style projects with 20+ REST APIs, JWT, and LLM integrations.'],
-  ['2023', 'Senior Secondary (Class XII)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE - 86%).'],
-  ['2021', 'Secondary (Class X)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE - 88%).']
+  ['2027 (Expected)', 'B.Tech in Computer Science & Engineering (CGPA: 7.3/10)', 'Birla Institute of Applied Sciences, Bhimtal. Relevant Coursework: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, OOP, Software Engineering.'],
+  ['2025', 'Top 25 — Graphethon', 'Secured a Top 25 national position among participants across India (Graphic Era Deemed to be University).'],
+  ['Certifications', 'freeCodeCamp Certified', 'Back End Development and APIs & JavaScript Algorithms and Data Structures.'],
+  ['Projects', 'Full-Stack & AI Applications', 'Designed and built 3 production-style applications with 20+ REST APIs, JWT authentication, and LLM integrations.'],
+  ['2023', 'Senior Secondary (Class XII)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE — 86%).'],
+  ['2021', 'Secondary (Class X)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE — 88%).']
 ];
