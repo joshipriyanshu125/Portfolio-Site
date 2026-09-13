@@ -5,7 +5,7 @@ export const profile = {
   phone: '+91 9105131502',
   email: 'joshipriyanshu125@gmail.com',
   github: 'https://github.com/joshipriyanshu125',
-  linkedin: 'https://linkedin.com/in/priyanshujoshi-215b85304',
+  linkedin: 'https://linkedin.com/in/priyanshu-joshi0105',
   portfolio: 'https://portfolio-site-eight-pi-33.vercel.app',
   summary: 'MERN Stack Developer and currently a final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 3 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, and LLM integration. Focused on Generative AI, prompt engineering, and RAG.',
   intro: 'Final-year CS student specializing in AI-powered full-stack web applications & MERN development.',
@@ -128,12 +128,13 @@ export const certifications = [
 
 export const achievements = [
   { title: 'Graphethon — National Rank', detail: 'Secured a Top 25 position among participants across India.' },
-  { title: 'Hackathons & Competitions', detail: 'Built full-stack solutions under tight time constraints in multiple technical competitions.' }
+  { title: 'Hackathons & Competitions', detail: 'Participated in Smart India Hackathon (SIH) 2024, NASA Hackathon 2024, and other hackathons, building full-stack solutions under tight time constraints.' }
 ];
 
 export const milestones = [
   ['2027 (Expected)', 'B.Tech in Computer Science & Engineering (CGPA: 7.3/10)', 'Birla Institute of Applied Sciences, Bhimtal. Relevant Coursework: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, OOP, Software Engineering.'],
   ['2025', 'Top 25 — Graphethon', 'Secured a Top 25 national position among participants across India (Graphic Era Deemed to be University).'],
+  ['Hackathons', 'SIH & NASA Space Apps 2024', 'Participated in Smart India Hackathon (SIH) 2024, NASA Hackathon 2024, and other hackathons, building full-stack solutions under tight time constraints.'],
   ['Certifications', 'freeCodeCamp Certified', 'Back End Development and APIs & JavaScript Algorithms and Data Structures.'],
   ['Projects', 'Full-Stack & AI Applications', 'Designed and built 3 production-style applications with 20+ REST APIs, JWT authentication, and LLM integrations.'],
   ['2023', 'Senior Secondary (Class XII)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE — 86%).'],

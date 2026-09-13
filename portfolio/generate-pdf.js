@@ -66,7 +66,7 @@ drawCenteredText([
 headerY += 12;
 
 drawCenteredText([
-  { text: 'linkedin.com/in/priyanshujoshi-215b85304', color: '#2563EB', link: 'https://linkedin.com/in/priyanshujoshi-215b85304' },
+  { text: 'linkedin.com/in/priyanshu-joshi0105', color: '#2563EB', link: 'https://linkedin.com/in/priyanshu-joshi0105' },
   { text: '  |  ', color: '#64748B' },
   { text: 'github.com/joshipriyanshu125', color: '#2563EB', link: 'https://github.com/joshipriyanshu125' }
 ], headerY);
@@ -186,7 +186,7 @@ doc.text('• Graphethon Certificate — Graphic Era Deemed to be University, 20
 sectionHeader('ACHIEVEMENTS');
 doc.font('Helvetica').fontSize(8.2).fillColor('#334155');
 doc.text('• Graphethon — secured a Top 25 position among participants across India.', leftMargin, doc.y, { width: contentWidth, lineGap: 0.8 });
-doc.text('• Participated in multiple hackathons and technical competitions, building full-stack solutions under tight time constraints.', leftMargin, doc.y, { width: contentWidth, lineGap: 0.8 });
+doc.text('• Participated in Smart India Hackathon (SIH) 2024, NASA Hackathon 2024, and other hackathons, building full-stack solutions under tight time constraints.', leftMargin, doc.y, { width: contentWidth, lineGap: 0.8 });
 
 console.log(`Final Y position: ${doc.y} / ${doc.page.height}`);
 doc.end();
