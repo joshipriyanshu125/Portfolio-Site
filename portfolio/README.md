@@ -1,6 +1,8 @@
 # Priyanshu Joshi - Developer Portfolio
 
-A responsive, WebGL-enhanced developer portfolio showcasing full-stack MERN work and an active Generative AI learning journey.
+A responsive, WebGL-enhanced developer portfolio showcasing full-stack MERN work, 3D interactive applications, and an active Generative AI learning journey.
+
+🌐 **Live Portfolio**: [https://portfolio-liart-two-pud1w3533c.vercel.app](https://portfolio-liart-two-pud1w3533c.vercel.app)
 
 ## Stack
 
@@ -37,4 +39,3 @@ public/         Downloadable resume and public files
 ```
 
 Edit `src/data/portfolio.js` to update personal details, projects, skills, and milestones without changing the interface.
-
