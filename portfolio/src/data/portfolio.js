@@ -7,7 +7,7 @@ export const profile = {
   email: 'joshipriyanshu125@gmail.com',
   github: 'https://github.com/joshipriyanshu125',
   linkedin: 'https://linkedin.com/in/priyanshu-joshi0105',
-  portfolio: 'https://portfolio-site-eight-pi-33.vercel.app',
+  portfolio: 'https://portfolio-liart-two-pud1w3533c.vercel.app',
   summary: 'MERN Stack Developer and currently a final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 4 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, LLM integration, and a 3D mobile virtual-lab app. Focused on Generative AI, prompt engineering, and RAG.',
   intro: 'Final-year CS student specializing in AI-powered full-stack web applications & MERN development.',
   focus: 'Generative AI, Prompt Engineering, RAG & LLM Integration',

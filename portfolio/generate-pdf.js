@@ -75,7 +75,7 @@ headerY += 10.5;
 
 drawCenteredText([
   { text: 'Portfolio: ', color: '#334155' },
-  { text: 'portfolio-site-eight-pi-33.vercel.app', color: '#2563EB', link: 'https://portfolio-site-eight-pi-33.vercel.app' }
+  { text: 'portfolio-liart-two-pud1w3533c.vercel.app', color: '#2563EB', link: 'https://portfolio-liart-two-pud1w3533c.vercel.app' }
 ], headerY);
 
 doc.y = headerY + 11;
