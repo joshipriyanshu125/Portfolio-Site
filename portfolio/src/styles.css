@@ -588,7 +588,7 @@ section:not(.hero) {
 .project {
   position: relative;
   display: grid;
-  grid-template-columns: 60px 1.5fr 1fr 42px;
+  grid-template-columns: 50px 1.5fr 1fr auto;
   gap: 24px;
   align-items: center;
   padding: 32px 16px;
@@ -602,7 +602,7 @@ section:not(.hero) {
 }
 
 .project:hover {
-  padding-left: 28px;
+  padding-left: 24px;
   background: rgba(15, 23, 42, 0.5);
 }
 
@@ -671,6 +671,101 @@ section:not(.hero) {
   background: var(--cyan);
   color: #040812;
   box-shadow: 0 0 20px var(--cyan-glow);
+}
+
+.project-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-links .round-link {
+  width: auto;
+  min-width: 42px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 6px;
+  font: 12px 'DM Mono', monospace;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-links .link-label {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Project Accent Color Variations */
+.project.emerald .project-no {
+  color: #34d399;
+}
+.project.emerald .tags span {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.25);
+}
+.project.emerald .project-features svg {
+  color: #34d399;
+}
+.project.emerald .round-link:hover {
+  background: #10b981;
+  color: #040812;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+}
+
+.project.blue .project-no {
+  color: #60a5fa;
+}
+.project.blue .tags span {
+  background: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
+  border-color: rgba(59, 130, 246, 0.25);
+}
+.project.blue .project-features svg {
+  color: #60a5fa;
+}
+.project.blue .round-link:hover {
+  background: #3b82f6;
+  color: #040812;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.project.cyan .project-no {
+  color: #38bdf8;
+}
+.project.cyan .tags span {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.25);
+}
+.project.cyan .project-features svg {
+  color: #38bdf8;
+}
+.project.cyan .round-link:hover {
+  background: #38bdf8;
+  color: #040812;
+  box-shadow: 0 0 20px var(--cyan-glow);
+}
+
+.project.violet .project-no {
+  color: #c084fc;
+}
+.project.violet .tags span {
+  background: rgba(168, 85, 247, 0.1);
+  color: #c084fc;
+  border-color: rgba(168, 85, 247, 0.25);
+}
+.project.violet .project-features svg {
+  color: #c084fc;
+}
+.project.violet .round-link:hover {
+  background: #a855f7;
+  color: #040812;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
 }
 
 /* AI SECTION */

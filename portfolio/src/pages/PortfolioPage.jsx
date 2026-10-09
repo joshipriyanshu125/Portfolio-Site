@@ -156,7 +156,7 @@ export default function App() {
                   </div>
                   <div className="stat-row">
                     <b>
-                      03<small>Shipped projects</small>
+                      04<small>Shipped projects</small>
                     </b>
                     <b>
                       MERN<small>Core universe</small>
@@ -274,15 +274,34 @@ export default function App() {
                         </span>
                       ))}
                     </div>
-                    <a
-                      href={profile.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="round-link"
-                      aria-label={'View ' + p.title + ' on GitHub'}
-                    >
-                      <ArrowUpRight />
-                    </a>
+                    {p.github ? (
+                      <div className="project-links">
+                        {p.github.map((g) => (
+                          <a
+                            key={g.label}
+                            href={g.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="round-link"
+                            aria-label={`View ${p.title} ${g.label} on GitHub`}
+                            title={g.label}
+                          >
+                            <Github size={14} />
+                            <span className="link-label">{g.label}</span>
+                          </a>
+                        ))}
+                      </div>
+                    ) : (
+                      <a
+                        href={profile.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="round-link"
+                        aria-label={'View ' + p.title + ' on GitHub'}
+                      >
+                        <ArrowUpRight />
+                      </a>
+                    )}
                   </Reveal>
                 ))}
               </div>
