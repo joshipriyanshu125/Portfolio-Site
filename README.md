@@ -4,7 +4,7 @@ Welcome to my personal developer portfolio — a modern and responsive website s
 
 ### 🌐 Live Portfolio
 
-👉 **[View Portfolio](https://portfolio-site-eight-pi-33.vercel.app/)**
+👉 **[View Portfolio](https://portfolio-liart-two-pud1w3533c.vercel.app/)**
 
 ### ✨ Highlights
 
