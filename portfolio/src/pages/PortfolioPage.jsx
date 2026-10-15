@@ -156,7 +156,7 @@ export default function App() {
                   </div>
                   <div className="stat-row">
                     <b>
-                      04<small>Shipped projects</small>
+                      {String(projects.length).padStart(2, '0')}<small>Shipped projects</small>
                     </b>
                     <b>
                       MERN<small>Core universe</small>
@@ -283,10 +283,10 @@ export default function App() {
                             target="_blank"
                             rel="noreferrer"
                             className="round-link"
-                            aria-label={`View ${p.title} — ${g.label}`}
+                            aria-label={`View ${p.title} on GitHub`}
                             title={g.label}
                           >
-                            {g.icon === 'live' ? <ArrowUpRight size={14} /> : <Github size={14} />}
+                            <Github size={14} />
                             <span className="link-label">{g.label}</span>
                           </a>
                         ))}

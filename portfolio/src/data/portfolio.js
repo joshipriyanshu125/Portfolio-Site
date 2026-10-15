@@ -107,8 +107,7 @@ export const projects = [
       'Parallel Job Queue with Live Stage Polling & 3D Glassmorphism UI'
     ],
     github: [
-      { label: 'Code', url: 'https://github.com/joshipriyanshu125/deep_research_ai' },
-      { label: 'Live', url: 'https://deep-research-ai-nine.vercel.app', icon: 'live' }
+      { label: 'GitHub', url: 'https://github.com/joshipriyanshu125/deep_research_ai' }
     ],
     accent: 'amber'
   },
