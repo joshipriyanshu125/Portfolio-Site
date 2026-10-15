@@ -768,6 +768,23 @@ section:not(.hero) {
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
 }
 
+.project.amber .project-no {
+  color: #fbbf24;
+}
+.project.amber .tags span {
+  background: rgba(245, 158, 11, 0.1);
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+.project.amber .project-features svg {
+  color: #fbbf24;
+}
+.project.amber .round-link:hover {
+  background: #f59e0b;
+  color: #040812;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+}
+
 /* AI SECTION */
 .ai-section {
   position: relative;

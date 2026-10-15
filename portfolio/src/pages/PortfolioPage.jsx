@@ -283,10 +283,10 @@ export default function App() {
                             target="_blank"
                             rel="noreferrer"
                             className="round-link"
-                            aria-label={`View ${p.title} ${g.label} on GitHub`}
+                            aria-label={`View ${p.title} — ${g.label}`}
                             title={g.label}
                           >
-                            <Github size={14} />
+                            {g.icon === 'live' ? <ArrowUpRight size={14} /> : <Github size={14} />}
                             <span className="link-label">{g.label}</span>
                           </a>
                         ))}

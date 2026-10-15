@@ -8,7 +8,7 @@ export const profile = {
   github: 'https://github.com/joshipriyanshu125',
   linkedin: 'https://linkedin.com/in/priyanshu-joshi0105',
   portfolio: 'https://portfolio-liart-two-pud1w3533c.vercel.app',
-  summary: 'MERN Stack Developer and currently a final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 4 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, LLM integration, and a 3D mobile virtual-lab app. Focused on Generative AI, prompt engineering, and RAG.',
+  summary: 'MERN Stack Developer and currently a final-year Computer Science student specializing in AI-powered full-stack web applications. Developed 5 production-style projects spanning 20+ REST API endpoints, JWT-based authentication, LLM integration, and a 3D mobile virtual-lab app. Focused on Generative AI, prompt engineering, and RAG.',
   intro: 'Final-year CS student specializing in AI-powered full-stack web applications & MERN development.',
   focus: 'Generative AI, Prompt Engineering, RAG & LLM Integration',
   resume: '/Priyanshu_Joshi_Resume.pdf'
@@ -41,7 +41,7 @@ export const experience = [
     role: 'Independent Full-Stack Developer',
     subtitle: 'Project Experience',
     points: [
-      'Designed and developed 4 production-style full-stack and mobile applications using the MERN stack, React Native, REST APIs, JWT authentication, MongoDB, and modern React workflows.',
+      'Designed and developed 5 production-style full-stack and mobile applications using the MERN stack, React Native, REST APIs, JWT authentication, MongoDB, and modern React workflows.',
       'Built 20+ REST API endpoints, role-based access controls, database schemas, responsive interfaces, and integrated LLM-powered features across resume and e-commerce applications.'
     ]
   }
@@ -92,6 +92,25 @@ export const projects = [
       { label: 'Web', url: 'https://github.com/joshipriyanshu125/ACEout_Web' }
     ],
     accent: 'emerald'
+  },
+  {
+    id: '05',
+    title: 'Deep Research AI',
+    kind: 'Autonomous AI Agent + Full Stack',
+    stackHeader: 'React 19, Vite, Node.js, Express, MongoDB Atlas, Gemini AI, Three.js',
+    description: 'An autonomous AI research platform that transforms any natural-language question into a comprehensive, citation-backed report by planning, searching, verifying, and synthesizing information from the web and peer-reviewed research papers.',
+    stack: ['React 19', 'Vite', 'Node.js', 'Express', 'MongoDB Atlas', 'Gemini AI', 'Three.js'],
+    features: [
+      'Autonomous Pipeline (Planner → Search → Evidence → Verification → Synthesis)',
+      '7 Search Providers (Tavily, Serper, DuckDuckGo, News, Wikipedia, OpenAlex, Crossref)',
+      'JWT Auth with Access + Refresh Tokens & Auto-Refresh Interceptors',
+      'Parallel Job Queue with Live Stage Polling & 3D Glassmorphism UI'
+    ],
+    github: [
+      { label: 'Code', url: 'https://github.com/joshipriyanshu125/deep_research_ai' },
+      { label: 'Live', url: 'https://deep-research-ai-nine.vercel.app', icon: 'live' }
+    ],
+    accent: 'amber'
   },
   {
     id: '02',
@@ -159,7 +178,7 @@ export const milestones = [
   ['2025', 'Top 25 — Graphethon', 'Secured a Top 25 national position among participants across India (Graphic Era Deemed to be University).'],
   ['Hackathons', 'SIH & NASA Space Apps 2024', 'Participated in Smart India Hackathon (SIH) 2024, NASA Hackathon 2024, and other hackathons, building full-stack solutions under tight time constraints.'],
   ['Certifications', 'freeCodeCamp Certified', 'Back End Development and APIs & JavaScript Algorithms and Data Structures.'],
-  ['Projects', 'Full-Stack, AI & EdTech Applications', 'Designed and built 4 production-style applications with 20+ REST APIs, JWT authentication, LLM integrations, and a 3D virtual lab.'],
+  ['Projects', 'Full-Stack, AI & EdTech Applications', 'Designed and built 5 production-style applications with 20+ REST APIs, JWT authentication, LLM integrations, and a 3D virtual lab.'],
   ['2023', 'Senior Secondary (Class XII)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE — 86%).'],
   ['2021', 'Secondary (Class X)', 'St. Lawrence Sr. Sec. School, Haldwani (CBSE — 88%).']
 ];
