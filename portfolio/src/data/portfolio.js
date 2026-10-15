@@ -94,24 +94,6 @@ export const projects = [
     accent: 'emerald'
   },
   {
-    id: '05',
-    title: 'Deep Research AI',
-    kind: 'Autonomous AI Agent + Full Stack',
-    stackHeader: 'React 19, Vite, Node.js, Express, MongoDB Atlas, Gemini AI, Three.js',
-    description: 'An autonomous AI research platform that transforms any natural-language question into a comprehensive, citation-backed report by planning, searching, verifying, and synthesizing information from the web and peer-reviewed research papers.',
-    stack: ['React 19', 'Vite', 'Node.js', 'Express', 'MongoDB Atlas', 'Gemini AI', 'Three.js'],
-    features: [
-      'Autonomous Pipeline (Planner → Search → Evidence → Verification → Synthesis)',
-      '7 Search Providers (Tavily, Serper, DuckDuckGo, News, Wikipedia, OpenAlex, Crossref)',
-      'JWT Auth with Access + Refresh Tokens & Auto-Refresh Interceptors',
-      'Parallel Job Queue with Live Stage Polling & 3D Glassmorphism UI'
-    ],
-    github: [
-      { label: 'GitHub', url: 'https://github.com/joshipriyanshu125/deep_research_ai' }
-    ],
-    accent: 'amber'
-  },
-  {
     id: '02',
     title: 'AI-Powered Gen-Z Fashion E-Commerce Platform',
     kind: 'AI-Powered Commerce',
@@ -123,6 +105,9 @@ export const projects = [
       'Conversational AI Shopping Assistant via Integrated LLM APIs',
       'JWT Authentication & Role-Based Authorization across REST APIs',
       'React.js + Tailwind CSS UI with Cloudinary & Mongoose Modeling'
+    ],
+    github: [
+      { label: 'GitHub', url: 'https://github.com/joshipriyanshu125/e-commerce' }
     ],
     accent: 'blue'
   },
@@ -139,6 +124,9 @@ export const projects = [
       '4 Modeled MongoDB Collections for resumes, versions & results',
       'OpenRouter LLM Integration for contextual ATS recommendations'
     ],
+    github: [
+      { label: 'GitHub', url: 'https://github.com/joshipriyanshu125/resume_analyzer' }
+    ],
     accent: 'cyan'
   },
   {
@@ -154,7 +142,28 @@ export const projects = [
       'Integrated Online Meeting & Booking Workflows',
       '5 Entity Schemas (Users, Appointments, Sessions, Records, Messages)'
     ],
+    github: [
+      { label: 'GitHub', url: 'https://github.com/joshipriyanshu125/student-counselling' }
+    ],
     accent: 'violet'
+  },
+  {
+    id: '05',
+    title: 'Deep Research AI',
+    kind: 'Autonomous AI Agent + Full Stack',
+    stackHeader: 'React 19, Vite, Node.js, Express, MongoDB Atlas, Gemini AI, Three.js',
+    description: 'An autonomous AI research platform that transforms any natural-language question into a comprehensive, citation-backed report by planning, searching, verifying, and synthesizing information from the web and peer-reviewed research papers.',
+    stack: ['React 19', 'Vite', 'Node.js', 'Express', 'MongoDB Atlas', 'Gemini AI', 'Three.js'],
+    features: [
+      'Autonomous Pipeline (Planner → Search → Evidence → Verification → Synthesis)',
+      '7 Search Providers (Tavily, Serper, DuckDuckGo, News, Wikipedia, OpenAlex, Crossref)',
+      'JWT Auth with Access + Refresh Tokens & Auto-Refresh Interceptors',
+      'Parallel Job Queue with Live Stage Polling & 3D Glassmorphism UI'
+    ],
+    github: [
+      { label: 'GitHub', url: 'https://github.com/joshipriyanshu125/deep_research_ai' }
+    ],
+    accent: 'amber'
   }
 ];
 
