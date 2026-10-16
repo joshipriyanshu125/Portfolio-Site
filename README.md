@@ -14,6 +14,7 @@ Welcome to my personal developer portfolio — a modern and responsive website s
 * ⚡ Fast and interactive experience
 * 🚀 Deployed with Vercel
 
+
 ### 🛠️ Tech Stack
 
 **React • JavaScript • CSS • Vercel**
